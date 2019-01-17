@@ -1,11 +1,10 @@
 import sys
 from plyparse import result, parser
 
-# arguments = sys.argv
-# print(arguments)
+arguments = sys.argv
 
 # Set Source Path
-source_path = "yes.scss"
+source_path = arguments[1]
 source_file = open(source_path, encoding="UTF-8")
 line = source_file.read()
 source_file.close()
