@@ -68,14 +68,14 @@ if temp != None:
 			print("Generating your CSS file...")
 		with open(dest_path,'w',encoding = 'UTF-8') as parsecss:
 			parsecss.write(result.converted)
-		print('\nYour CSS file has been generated')
+		print('\nYour CSS file has been generated in:\n{}'.format(dest_path))
 
 	# Updates file if .CSS file already exist. 
 	except FileExistsError:
 		print('Updating your CSS file...')
 		with open(dest_path,'w',encoding = 'UTF-8') as parsecss:
 			parsecss.write(result.converted)
-		print("\nYour CSS file has been updated")
+		print("\nYour CSS file has been updated in:\n{}".format(dest_path))
 
 else:
 	print("Syntax Error detected in line {} involving value \"{}\"".format(result.text.lineno, result.text.value))

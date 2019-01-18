@@ -61,9 +61,3 @@ def t_error(t):
 # Build the lexer
 import ply.lex as lex
 lex.lex()
-
-source_path = "yes.scss"
-with open(source_path, encoding="UTF-8") as source_file:
-	source_text = source_file.read()
-
-# lex.input(source_text)
