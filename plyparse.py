@@ -129,4 +129,4 @@ def p_error(p):
 	result.setSuccess(False)
 
 # Build the parser
-parser = yacc.yacc()
+parser = yacc.yacc(errorlog=yacc.NullLogger())
